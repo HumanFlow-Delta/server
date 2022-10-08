@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "hf-server"
+version = "0.1.0"
+description = "HumanFlow authentication server"
+authors = ["agvantibo <apicalium@gmail.com>"]
+license = "GNU AGPL v3"
+readme = "README.md"
+packages = [{include = "hf_server"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Flask = "*"
+Flask-DB = "*"
+Flask-Migrate = "^3.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
